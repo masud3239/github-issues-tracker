@@ -133,7 +133,7 @@ Closed
 
 </div>
 
-<!-- SPINNER -->
+<!-- Spinner -->
 
 <div class="text-center mt-10">
 
@@ -144,7 +144,7 @@ class="loading loading-spinner loading-lg text-primary hidden">
 </div>
 
 
-<!-- ISSUE GRID -->
+<!-- Issue Grid -->
 
 <div id="issuesContainer"
 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
@@ -152,20 +152,20 @@ class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
 </div>
 
 
-
+<!--  Modal Section -->
 
 <dialog id="issueModal" class="modal">
 
 <div class="modal-box max-w-3xl">
 
-<!-- TITLE -->
+<!-- Title -->
 
 <h2 id="modalTitle"
 class="text-2xl font-bold mb-2">
 </h2>
 
 
-<!-- STATUS + AUTHOR -->
+<!-- Status + Author -->
 
 <div class="flex items-center gap-3 mb-4">
 
@@ -174,9 +174,9 @@ class="badge badge-success">
 Open
 </span>
 
-<span class="text-gray-500 text-sm">
+<span class="text-[#64748B] text-[12px]">
 
-Opened by 
+ • Opened by 
 <b id="modalAuthor"></b>
 
 •
@@ -188,7 +188,7 @@ Opened by
 </div>
 
 
-<!-- LABELS -->
+<!-- Labels -->
 
 <div class="flex gap-2 mb-4">
 
@@ -203,39 +203,35 @@ Help Wanted
 </div>
 
 
-<!-- DESCRIPTION -->
+<!-- Description -->
 
 <p id="modalDescription"
-class="text-gray-600 mb-6">
+class="text-[#64748B] text-[16px] mb-6">
 </p>
 
 
-<!-- ASSIGNEE + PRIORITY -->
+<!-- Assignee + Priority  -->
 
-<div class="bg-base-200 p-4 rounded-lg flex justify-between">
+<div class="bg-base-200 p-4 rounded-lg grid grid-cols-3">
 
+<!-- LEFT -->
 <div>
-
 <p class="text-sm text-gray-500">
 Assignee:
 </p>
 
-<p id="modalAssignee"
-class="font-semibold">
+<p id="modalAssignee" class="font-semibold">
 </p>
-
 </div>
 
-<div>
-
+<!-- CENTER -->
+<div class="text-center">
 <p class="text-sm text-gray-500">
 Priority:
 </p>
 
-<span id="modalPriority"
-class="badge badge-error">
+<span id="modalPriority" class="badge badge-error">
 </span>
-
 </div>
 
 </div>
