@@ -117,27 +117,6 @@ displayIssues(allIssues.filter(i=>i.status==="closed"));
 
 // OPEN MODAL
 
-// async function openModal(id){
-
-// const res=await fetch(
-// `https://phi-lab-server.vercel.app/api/v1/lab/issue/${id}`
-// );
-
-// const data=await res.json();
-
-// const issue=data.data;
-
-// document.getElementById("modalTitle").innerText=
-// issue.title;
-
-// document.getElementById("modalDescription").innerText=
-// issue.description;
-
-// document.getElementById("issueModal").showModal();
-
-// }
-
-
 async function openModal(id){
 
 const res = await fetch(

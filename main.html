@@ -34,7 +34,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <body class="bg-base-200">
 
-<!-- NAVBAR -->
+<!-- Navbar Section -->
 
 <div class="navbar bg-base-100 shadow px-6 justify-between">
 
@@ -68,23 +68,23 @@ class="btn btn-primary text-[16px] font-semibold">
 </div>
 
 
-<!-- TABS -->
+<!-- Tabs -->
 
 <div class="px-6 mt-6">
 
-<div class="tabs tabs-boxed">
+<div class="tabs tabs-boxed gap-4">
 
-<a class="tab tab-active"
+<a class="tab tab-active btn btn-primary"
 onclick="filterTab('all',this)">
 All
 </a>
 
-<a class="tab"
+<a class="tab btn btn-success"
 onclick="filterTab('open',this)">
 Open
 </a>
 
-<a class="tab"
+<a class="tab btn btn-accent"
 onclick="filterTab('closed',this)">
 Closed
 </a>
@@ -94,39 +94,44 @@ Closed
 </div>
 
 
-<!-- ISSUE HEADER -->
+<!-- Issue header -->
 
 <div class="flex justify-between px-6 mt-4">
 
-<div>
+<!--  left side -->
+<div class="flex items-center gap-3">
 
-<h2 id="issueCount"
-class="text-lg font-bold">
+<img src="./assets/Aperture.png" class="w-8 h-8 bg-purple-200 rounded-full p-1" alt="">
+
+<div>
+<h2 id="issueCount" class="text-[20px] font-semibold">
 Issues
 </h2>
 
-<p class="text-sm text-gray-500">
+<p class="text-[16px] text-[#64748B]">
 Track and manage your project issues
 </p>
+</div>
 
 </div>
 
+
+<!-- Right side -->
 <div class="flex gap-4">
 
 <div class="flex items-center gap-2">
-<div class="w-3 h-3 bg-green-500 rounded-full"></div>
+<div class="w-3 h-3 bg-green-500 rounded-full text-[16px] font-semibold"></div>
 Open
 </div>
 
 <div class="flex items-center gap-2">
-<div class="w-3 h-3 bg-purple-500 rounded-full"></div>
+<div class="w-3 h-3 bg-purple-500 rounded-full text-[16px] font-semibold"></div>
 Closed
 </div>
 
 </div>
 
 </div>
-
 
 <!-- SPINNER -->
 
