@@ -4,7 +4,7 @@ const spinner=document.getElementById("spinner");
 let allIssues=[];
 
 
-// LOAD ALL ISSUES
+//  Load all issues
 
 async function loadIssues(){
 
@@ -28,7 +28,7 @@ allIssues.length+" Issues";
 }
 
 
-// DISPLAY ISSUES
+//  Display issues
 
 function displayIssues(issues){
 
@@ -73,11 +73,11 @@ ${issue.label}
 
 </div>
 
-<p class="text-sm text-gray-500">
+<p class="text-sm text-[#64748B]">
 Author: ${issue.author}
 </p>
 
-<p class="text-xs text-gray-400">
+<p class="text-xs text-[#64748B]">
 ${issue.createdAt}
 </p>
 
@@ -115,7 +115,7 @@ displayIssues(allIssues.filter(i=>i.status==="closed"));
 }
 
 
-// OPEN MODAL
+// Open Modal
 
 async function openModal(id){
 
@@ -128,49 +128,49 @@ const data = await res.json();
 const issue = data.data;
 
 
-// TITLE
+// Title
 
 document.getElementById("modalTitle").innerText =
 issue.title;
 
 
-// DESCRIPTION
+// Description
 
 document.getElementById("modalDescription").innerText =
 issue.description;
 
 
-// AUTHOR
+// Author
 
 document.getElementById("modalAuthor").innerText =
 issue.author;
 
 
-// DATE
+// Date
 
 document.getElementById("modalDate").innerText =
 issue.createdAt;
 
 
-// LABEL
+// Label
 
 document.getElementById("modalLabel").innerText =
 issue.label;
 
 
-// PRIORITY
+// Priority
 
 document.getElementById("modalPriority").innerText =
 issue.priority;
 
 
-// ASSIGNEE
+// Assignee
 
 document.getElementById("modalAssignee").innerText =
 issue.author;
 
 
-// STATUS
+// Status 
 
 const status = document.getElementById("modalStatus");
 
@@ -183,14 +183,14 @@ status.className = "badge badge-secondary";
 }
 
 
-// OPEN MODAL
+// Open Modal
 
 document.getElementById("issueModal").showModal();
 
 }
 
 
-// SEARCH
+// Search
 
 async function searchIssues(){
 
@@ -212,6 +212,6 @@ displayIssues(data.data);
 }
 
 
-// INITIAL LOAD
+// Initial load
 
 loadIssues();
